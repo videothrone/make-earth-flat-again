@@ -1,0 +1,34 @@
+<div class="body-container">
+    <div class="login-menu">
+        <a href="/profile/edit">Edit Profile </a>|
+        <a href="/signers">All Signers </a>|
+        <a href="/logout">Logout </a>
+    </div>
+</div>
+
+
+<div id="container">
+    <div class="container-content">
+        <div class="content-block-middle"><img src="alien-head.png"></div>
+            <h1>One step closer to glorious flatness!<br>The petition is now {{count}} signatures strong!</h1>
+            <div class="content-block-middle">
+                {{#sig}}
+                    <p><div id="canv">
+                        <img src="{{signature}}">
+                    </div></p>
+                {{/sig}}
+
+                <p><a href="/signers">Other supporters of the cause</a></p>
+                <p><a href="/profile/edit">Edit your data</a></p>
+
+                <form method="POST">
+                    {{#if error}}
+                        <p><div class="inputs"><div class="error"><h3>Uh-Oh. That's weird, please try again!</h3></div></div>
+                    {{/if}}
+                <div class="inputs"><button type="submit" id="submit-button">Delete your signature</button></div>
+                <input type="hidden" name="_csrf" value="{{csrfToken}}"></p>
+                </form>
+
+            </div>
+    </div>
+</div>

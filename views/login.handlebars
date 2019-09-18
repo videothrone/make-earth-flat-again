@@ -1,0 +1,26 @@
+<div class="login-menu">
+    <a href="/register">Register </a>|
+    <a href="/login">Login </a>
+</div>
+
+<div id="container">
+    <div class="container-content">
+        <div class="login-img">
+            <img src="login.png">
+        </div>
+            <div class="form-header"><h1>Access our supreme database once again!</h1></div>
+                <form method="POST">
+                    {{#if error}}
+                        <div class="error"><h6>Uh-Oh. That's weird, please try again!</h6></div>
+                    {{/if}}
+                    <div class="inputs">
+                        <input required name="email" autocomplete="off" placeholder="Email Address...">
+                        <input type="password" required name="password" autocomplete="off" placeholder="Password...">
+                        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                    </div>
+                    <div class="inputs">
+                        <button id="submit-button">LOG IN</button>
+                    </div>
+                </form>
+    </div>
+</div>

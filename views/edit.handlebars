@@ -1,0 +1,32 @@
+<!-- <div class="body-container"> -->
+    <div class="login-menu">
+        <a href="/thanks">Edit Signature </a>|
+        <a href="/signers">All Signers </a>|
+        <a href="/logout">Logout </a>
+    </div>
+<!-- </div> -->
+
+<div id="container">
+    <div class="container-content">
+        <div class="login-img">
+            <img src="../edit.png">
+        </div>
+        <p><h1>Edit your profile</h1></p>
+        {{#signers}}
+            <form method="POST">
+                <div class="inputs"><input type="text" required name="first" autocomplete="off" value="{{first}}"></div>
+                <div class="inputs"><input type="text" required name="last" autocomplete="off" value="{{last}}"></div>
+                <div class="inputs"><input type="text" required name="email" autocomplete="off" value="{{email}}"></div>
+                <div class="inputs"><input type="password" name="password" autocomplete="off" placeholder="New Password..."></div>
+                <div class="inputs"><input type="number" name="age" autocomplete="off" value="{{age}}" placeholder="Age..."></div>
+                <div class="inputs"><input type="text" name="city" autocomplete="off" value="{{city}}" placeholder="City..."></div>
+                <div class="inputs"><input name="url" autocomplete="off" value="{{url}}" placeholder="Homepage..."></div>
+                {{#if error}}
+                    <div class="inputs"><div class="error"><h2>Uh-Oh. That's weird, please try again!</h2></div></div>
+                {{/if}}
+        {{/signers}}
+                <div class="inputs"><button id="submit-button">UPDATE</button></div>
+                <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            </form>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="body-container">
+    <div class="login-menu">
+        <a href="/register">Register </a>|
+        <a href="/login">Login </a>
+    </div>
+</div>
+
+<div class="nav">
+    <h1>Make Earth Flat Again</h1>
+</div>
+
+<div class="nav-img">
+<img src="mefa2.png" id="alien-header">
+</div>
+
+<div id="container">
+    <div class="container-content">
+        <p><h1>Spheres are no fun! Help make it flat again! Sign our petition now human!</h1></p>
+            <form method="POST">
+                    <div class="inputs"><input required name="first" autocomplete="off" placeholder="First Name..."></div>
+                    <div class="inputs"><input required name="last" autocomplete="off" placeholder="Last Name..."></div>
+                    <div class="inputs"><input required name="email" autocomplete="off" placeholder="Email Address..."></div>
+                    <div class="inputs"><input type="password" required name="password" autocomplete="off" placeholder="Password..."></div>
+                    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+                {{#if error}}
+                    <div class="inputs"><div class="error"><h2>Uh-Oh. That's weird, please try again!</h2></div></div>
+                {{/if}}
+                <div class="inputs"><button id="submit-button">SIGN ME UP, SCOTTY</button></div>
+                <div class="inputs"><p>You've already signed up? Please <a href="/login">log in</a>.</p></div>
+
+    </div>
+</div>
+
+<footer>
+    <p>( ͡° ͜ʖ ͡°) <a href="/about">About</a> |
+        <a href="https://icons8.com/ouch" target="_blank">Img Credit</a> </p>
+</footer>

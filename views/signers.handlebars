@@ -1,0 +1,23 @@
+<div class="body-container">
+    <div class="login-menu">
+        <a href="/profile/edit">Edit Profile </a>|
+        <a href="/thanks">Edit Signature </a>|
+        <a href="/logout">Logout </a>
+    </div>
+</div>
+
+<div id="container">
+    <div class="container-content">
+        <div class="content-block-middle"><img src="flat-earth.png"></div>
+            <p><h1>We salute the signers</h1></p>
+                <div class="signers-content">
+                    {{#signers}}
+                        {{#if url}}
+                            <p><a href="{{url}}" target="_blank">{{first}} {{last}}</a> {{#if age}} | {{age}} | {{/if}}{{#if city}}<a href="/signers/{{city}}">{{city}}</a></p>{{/if}}
+                        {{else}}
+                            <p> {{first}} {{last}} {{#if age}} | {{age}} | {{/if}}<a href="/signers/{{city}}">{{city}}</a></p>
+                        {{/if}}
+                    {{/signers}}
+                </div>
+    </div>
+</div>

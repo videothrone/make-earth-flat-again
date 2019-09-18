@@ -1,0 +1,22 @@
+<div class="body-container">
+    <div class="login-menu">
+        <a href="/profile/edit">Edit Profile </a>|
+        <a href="/thanks">Edit Signature </a>|
+        <a href="/signers">All Signers </a>|
+        <a href="/logout">Logout </a>
+    </div>
+</div>
+
+<div id="container">
+    <div class="container-content">
+        <p><h1>We salute the inhabitants of {{city}}</h1></p>
+        <div class="signers-content">
+            {{#signers}}
+                {{#if url}}
+                    <p><a href="{{url}}" target="_blank">{{first}} {{last}}</a> {{#if age}} | {{age}}  {{/if}}</p>
+                {{else}}
+                    <p> {{first}} {{last}} {{#if age}} | {{age}}  {{/if}}</p>
+                {{/if}}
+            {{/signers}}
+    </div>
+</div>

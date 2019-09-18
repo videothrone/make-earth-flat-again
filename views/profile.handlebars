@@ -1,0 +1,23 @@
+<div class="body-container">
+    <div class="login-menu">
+        <a href="/register">Register </a>|
+        <a href="/profile/edit">Edit Profile </a>|
+        <a href="/logout">Logout </a>
+    </div>
+</div>
+
+<div id="container">
+    <div class="container-content">
+        <div class="content-block-middle"><img src="profile.png" id="profile-pic"></div>
+        <p><h1>Fellow carbon-based lifeform, give us more data!</h1></p>
+            <form method="POST">
+                    <div class="inputs"><input name="age" autocomplete="off" placeholder="Age..."></div>
+                    <div class="inputs"><input name="city" autocomplete="off" placeholder="City..."></div>
+                    <div class="inputs"><input name="url" autocomplete="off" placeholder="Homepage..."></div>
+                    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                {{#if error}}
+                    <div class="inputs"><div class="error"><h2>Uh-Oh. That's weird, please try again!</h2></div></div>
+                {{/if}}
+                <div class="inputs"><button id="submit-button">CONTINUE</button></div>
+    </div>
+</div>

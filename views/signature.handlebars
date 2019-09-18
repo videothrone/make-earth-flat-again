@@ -1,0 +1,23 @@
+<div class="body-container">
+    <div class="login-menu">
+        <a href="/profile/edit">Edit Profile </a>|
+        <a href="/logout">Logout </a>
+    </div>
+</div>
+
+<div id="container">
+    <div class="container-content">
+        <p><h1>Yes, sign it! Make it flat! Be happy again!</h1></p>
+            <form method="POST">
+                {{#if error}}
+                    <div class="error"><h2>Uh-Oh. That's weird, please try again!</h2></div>
+                {{/if}}
+                    <input type="hidden" name="signature" id="signature">
+                    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                    <p><canvas id="canv" width="600" height="90"></canvas><div id="sign">Oh yes, sign here!</div></p>
+                <div class="inputs"><button id="submit-button">SUBMIT</button></div>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="./canvas.js"></script>
