@@ -1,14 +1,14 @@
 # Make Earth Flat Again
 
-"Make Earth Flat Again" is a satirical online petition with nods to B-Movies and animation done during my stint at [SPICED Academy](https://www.spiced.academy/program/full-stack-web-development/).
+"Make Earth Flat Again" is a satirical online petition with nods to B-Movies and animation. Done in about a week during my stint at [SPICED Academy](https://www.spiced.academy/program/full-stack-web-development/).
 
 ---
 
 ## Preview
 
-[![Online Petition](https://github.com/videothrone/online-petition/blob/master/screenshot.png)](https://petitionx.herokuapp.com)
+[![Online Petition](siteflow.gif)](https://petitionx.herokuapp.com)
 
-[![Online Petition](https://github.com/videothrone/online-petition/blob/master/screenshot2.png)](https://petitionx.herokuapp.com)
+[![Online Petition](siteflow2.gif)](https://petitionx.herokuapp.com)
 
 ## Demo
 
@@ -16,7 +16,7 @@ https://petitionx.herokuapp.com
 
 ## Tech
 
-CSS, VanillaJS, Handlebars.js, Canvas, Node.js / Express, PostgreSQL and Heroku
+CSS, JavaScript, Handlebars.js, Canvas, Node.js / Express, PostgreSQL and Heroku
 
 ## Features
 
@@ -42,7 +42,7 @@ CSS, VanillaJS, Handlebars.js, Canvas, Node.js / Express, PostgreSQL and Heroku
 
 ## Future
 
--   Implement better mobile responsiveness, more functionality & additional UI elements
+-   Implement better mobile responsiveness & additional UI elements
 
 ## Credits
 
