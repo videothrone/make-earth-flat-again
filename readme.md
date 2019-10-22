@@ -22,11 +22,19 @@ CSS, JavaScript, Handlebars.js, Canvas, Node.js / Express, PostgreSQL and Heroku
 
 -   Users can register a profile (and edit it later), log in and log out as they please
 
+-   Registration requires certain information and is split into required and optional, errors are rendered if required info isn't entered
+
 -   Registered user can sign the petition (with Canvas), also delete the signature and re-do it
 
--   Signers can see the total of signees, other signers and filter on city
+-   User and city names are converted to begin with a capital letter
 
--   Live demo deployed to Heroku
+-   Signers can see the total of signees, other signers and filter based on city
+
+-   Nav logic: changes depending on where a user is on the site
+
+-   Logged-in users cannot access the registration or login pages (and are redirected). Logged-out users can only access the registration and login
+
+-   Clicking on about on the registration page opens an overlay with information about the project.
 
 ## Goals while doing the project
 
