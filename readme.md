@@ -2,15 +2,15 @@
 
 "Make Earth Flat Again" is a satirical online petition with nods to B-Movies and animation. Done in about a week during my stint at [SPICED Academy](https://www.spiced.academy/program/full-stack-web-development/).
 
-<b>Note:</b> This project was hosted for years on Heroku, before their free tier shut down. At this point the code and libraries are years old, out of date and the whole project needs major refactoring. I have to interest in rewriting this, so this repo will remain here as a snapshot it time.
+<b>Note:</b> This project was hosted for years on Heroku, before their free tier shut down. At this point the code and libraries are years old, out of date and the whole project needs major refactoring. I have no interest in rewriting this, so this repo will remain here as a snapshot it time. :)
 
 ---
 
 ## Preview
 
-[![Online Petition](siteflow.gif)]
+![Online Petition](siteflow.gif)
 
-[![Online Petition](siteflow2.gif)]
+![Online Petition](siteflow2.gif)
 
 ## Tech
 
